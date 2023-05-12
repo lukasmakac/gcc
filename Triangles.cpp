@@ -67,8 +67,7 @@ auto read_graph(string filename) {
  * @param graph Zoznam naslednikov - vrcholy a ich pridruzene uzly
  * @return Globalny zhlukovaci koeficient
  */
-double global_clustering_coefficient(
-        const unique_ptr<unordered_map<int, unique_ptr<unordered_set<int>>>> &graph) {
+double global_clustering_coefficient(const unique_ptr<unordered_map<int, unique_ptr<unordered_set<int>>>> &graph) {
     // Initialize variables to keep track of the number of triangles and connected triples
     int triangles = 0;
     int connected_triples = 0;
